@@ -1,0 +1,25 @@
+Peter Zhong
+CSE 374 HW4
+5/4/2021
+
+1. Description of My Project:
+	This is a C program that counts the number of a certain letter in multiple
+text files.Upon successful execution, the program will print out how many times the
+letter has appeared in total in the text files passed in the argument.
+
+2. Command for compiling my code: gcc -Wall -std=c11 -g -o countLetter countLetter.c
+
+3. Technical Directions:
+	After compiling and outputting to countLetter, it should be called in the
+following format:
+
+	./countLetter [letter] [file1] [file2] ...
+	
+	One and only one letter argument should be passed. At least one filename
+argument should be passed. If not enough arguments are passed, the program will 
+print out an error message and exit.
+	[letter]: the letter to be searched. The argument should only be a single
+letter. Otherwise, the program will print out an error message and exit. 
+	[file]: filenames of files to be inspected. When a file cannot be opened, 
+the program will print out corresponding messages in the command window and continue
+executing normally. 
