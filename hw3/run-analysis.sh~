@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# Peter Zhong
+# CSE 374 HW3 Q3
+# 4/26/2021
+
+# This script runs the size analysis on urls in a text file.
+# It returns an output file (named based on user input) that
+# contains the course code number followed by the size of the
+# course webpage. This script only return course webpages with
+# size greater than 0.
+
+# check for arguments
+if [$# -ne 2 ]
+then
+    echo 'Error: expecting two arguments'
+    exit 1
+fi
+
+# reading output filename and urls filename
+outfile="$1"
+urls="$2"
+
+# make a temporary file
+temp=$(mktemp)
+
+# check if output file exists
+if [ -f "$outfile" ]
+then
+    echo "Warning: replacing $outfile"
+    # clear the content of the output file
+    > "$outfile"
+fi
+
+while read -ra line
+do
+    # perform measurement
+    echo "Performing byte-size measurement on $line"
+    size=$(./perform-measurement.sh "$line")
+    # check size
+    if [ "$size" -gt 0 ]
+    then
+	echo "$line" > "$temp"
+	courseNum=$(grep -o '[0-9][0-9][0-9]' "$temp")
+	echo "$courseNum $size" >> "$outfile"
+	echo "...successful"
+    else
+	echo "...failure"
+    fi
+done < "$urls"
+
+#remove temporary file
+rm "$temp"
+exit 0

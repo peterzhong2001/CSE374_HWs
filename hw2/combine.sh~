@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Peter Zhong
+# CSE 374 HW2 Q3
+# 4/19/2021
+
+# this script concatenates all the contents from the filenames following
+# the first filename. It then uses the first filename to create a new file
+# that contains the content of the concatenation.
+
+for filename in "$@"; do
+    

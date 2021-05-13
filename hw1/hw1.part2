@@ -1,0 +1,21 @@
+1. Peter Zhong
+2. I used emacs to create this file.
+3. I used "Ctrl+X+Ctrl+F" command, and entered "hw1.part2" to create this file.
+4. The command "wc" print newline, word, and byte counts for each file. "-w" prints out
+   the word count.
+5.    38   90 2049 /etc/passwd
+6. "kill" command can be used to terminate processes.
+7. This variable contains localhost.localdomain. It is the host name and the domain name
+   of this linux machine.
+8. 1)$SHELL: the type of shell that is being used;
+   2)$USER: the current user of the machine.
+9. The "find" command can be used to find the path to the file according to the filename.
+   This command will print out the file path.
+10. I googled "How to find file in linux" and found the tips on using the "find" command
+    on linux.com.
+11. "find" command finds the path to files, while "which" command finds the path of an
+    executable command.
+12. "echo Hello World > hello" will create a new file that contains "Hello World".
+    "echo Hello World" will print out "Hello World" in the terminal.
+13. This will replace the content of the original hello file with "deep breaths".
+14. This will append "relax" to the end of the hello file.

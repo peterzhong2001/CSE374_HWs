@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# Peter Zhong
+# CSE 374 HW2 Q4
+# 4/19/2021
+
+# This script checks the spelling of every word in a file against an
+# existing dictionary file. It prints out the number of misspelled words
+# found in the file and the number of unique words among those misspelled
+# words.
+
+filename=$1
+
+if [ $# -ne 1 ]
+then
+    echo 'Error: can only accept one argument' >&2
+    exit 1
+fi
+
+if [ ! -f $1 ]
+then
+    echo 'Error: filename not valid' >&2
+    exit 1
+# check if spelling file already exists
+elif [ -f "$filename.spelling" ]
+then
+    echo "replacing $filename.spelling file" >&1
+fi
+
+count=0
+ucount=0
+
+# loop to read lines
+while read -r line
+do
+    # loop to read words
+    for word in "$line"
+    do
+	# get the count for words
+	instances=$(grep -c "$word" /usr/share/dict/words)
+	if [ $instances -eq 0 ]
+	then
+	    # check if unique
+	    unique=$(grep -c "$word" $filename.spelling)
+	    if [ $unique -ne 0 ]
+	    then
+		ucount=$(($ucount + 1))
+	    fi
+	    # append the word to the spelling file
+	    cat "$word" > "$filename.spelling"
+	    count=$(($count + 1))
+	fi
+    done
+done < "$filename"
+
+# print out final messages
+echo "found $count speling erros, output to file $filename.spelling" >&1
+echo "$ucount of the words are unique" >&1
+exit 0
+
+done

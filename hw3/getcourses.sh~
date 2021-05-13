@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# Peter Zhong
+# CSE 374 HW3 Q1
+# 4/26/2021
+
+# This script takes an html and extracts all urls to CSE course websites.
+# It stores these urls in a text file (name given by the user).
+
+# check number of arguments
+if [[ $# -lt 2 ]]
+then
+    echo 'Error: less than two arguments passed'
+    exit 1
+fi
+
+# check input file
+if [[ ! -f "$1" ]]
+then
+    echo 'Error: input file does not exist'
+    exit 1
+fi
+
+# check output file
+if [[ -f "$2" ]]
+then
+    echo 'Warning: replacing existing output file'
+fi
+
+# find all lines with http
+grep 'http' "$1" > "$2"
+
+# remove everything before http
+sed -i 's/.*http/http/g' "$2"
+
+# modify cse578 to include backslash
+sed -i 's/cse578/cse578\//g' "$2"
+
+# remove everthing after /' and adding 21sp
+sed -i "s/\/'.*/\/21sp\//g" "$2"
+
+# remove everything after /" and adding 21sp
+sed -i 's/\/".*/\/21sp\//g' "$2"
+
+# remove irrelevant urls
+sed -i '/courses\//!d' "$2"
+sed -i '/www/d' "$2"
+sed -i '/csep/d' "$2"
+
+# remove all the duplicating urls
+sort "$2" | uniq > backup
+cp backup "$2"
+rm backup
+exit 0

@@ -1,0 +1,45 @@
+Peter Zhong
+CSE 374 HW3
+4/26/2021
+
+
+1. List of commands:
+   getcourses: echo, exit, grep, sed, sort, cp, rm
+   perform-measurement: echo, exit, mktemp, wget, grep, sed, cat, rm
+   run-analysis: mktemp, echo, grep, rm, exit
+
+
+2. Design decisions
+
+   getcourses: I have decided to include all urls that includes the pattern
+   	       "courses/", since all of these urls are CSE course websites
+	       hosted on courses.cs.washington.edu. I also decided to delete
+	       the "csep" courses, since they are for the PMP program. I also     		       included an additional step to process the degenerate link of CSE 		       578, a special url that does not end with a forward slash.
+
+   perform-measurement: Instead of using the wc command to count the byte size
+			of the html file, I used sed to process the information
+			outputted by the wget command. I also redirected the
+			html download of the wget command to /dev/null to avoid
+			clogging up the entire directory with html files.
+
+   run-analysis: I added an argument check at the beginning of the script to 
+		 make sure that the number of arguments passed into the script
+		 is correct. I also implemented a warning message when the output
+		 filename already exists.
+
+
+3. Trend in the scatterplot:
+	The course websites average at around 20k-30k bytes in size. Most of the
+	course websites are sized under 50k bytes. Only two courses goes above
+	100k bytes. No solid conclusion can be drawn for the relationship between
+	the size of the website and ease of navigation, since the term "ease of
+	navigation" is not defined and will require further research and scripting
+	to quantify. Regardless, since most of the websites are on the lower end
+	of the size spectrum, it can be generally assumed that the ease of
+	navigation of the websites are not related to their size.
+
+4. The number that the R script prints out: 
+	20797.53 bytes is the average size of all the course websites that are
+	being analyzed.
+
+   

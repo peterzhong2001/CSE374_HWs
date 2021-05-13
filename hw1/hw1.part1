@@ -1,0 +1,139 @@
+Script started on 2021-04-06 19:50:54-07:00
+]777;notify;Command completed;ls -a]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ passwd
+Changing password for user hpzhong.
+Current password: 
+New password: 
+BAD PASSWORD: The password fails the dictionary check - it is based on a dictionary word
+New password: 
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+]777;notify;Command completed;passwd]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ date
+Tue Apr  6 19:52:22 PDT 2021
+]777;notify;Command completed;date]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ echo 'GO DAWGZ'
+GO DAWGZ
+]777;notify;Command completed;echo 'GO DAWGZ']0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ pwd
+/home/hpzhong
+]777;notify;Command completed;pwd]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ cd ~
+]777;notify;Command completed;cd ~]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ ls -a
+[0m[38;5;33m.[0m              [38;5;33m.cache[0m     [38;5;33m.emacs.d[0m       [38;5;33m.local[0m    [38;5;33mPublic[0m           [38;5;33mVideos[0m
+[38;5;33m..[0m             [38;5;33m.config[0m    .esd_auth      [38;5;33m.mozilla[0m  .python_history  .viminfo
+.bash_history  [38;5;33mDesktop[0m    hw1.part1      [38;5;33mMusic[0m     [38;5;33m.ssh[0m
+.bash_profile  [38;5;33mDocuments[0m  .ICEauthority  [38;5;33mPictures[0m  [38;5;33mTemplates[0m
+.bashrc        [38;5;33mDownloads[0m  linuxcheck.sh  [38;5;33m.pki[0m      tmpfile
+]777;notify;Command completed;ls -a]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ mkdir temp
+]777;notify;Command completed;mkdir temp]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ mv temp HWOne
+]777;notify;Command completed;mv temp HWOne]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ cd HWOne
+]777;notify;Command completed;cd HWOne]0;hpzhong@localhost:~/HWOne]7;file://localhost.localdomain/home/hpzhong/HWOne[hpzhong@localhost HWOne]$ date > now
+]777;notify;Command completed;date > now]0;hpzhong@localhost:~/HWOne]7;file://localhost.localdomain/home/hpzhong/HWOne[hpzhong@localhost HWOne]$ ls -l
+total 4
+-rw-rw-r-- 1 hpzhong hpzhong 29 Apr  6 19:53 now
+]777;notify;Command completed;ls -l]0;hpzhong@localhost:~/HWOne]7;file://localhost.localdomain/home/hpzhong/HWOne[hpzhong@localhost HWOne]$ > temporary
+]777;notify;Command completed;> temporary]0;hpzhong@localhost:~/HWOne]7;file://localhost.localdomain/home/hpzhong/HWOne[hpzhong@localhost HWOne]$ mv temporary test
+]777;notify;Command completed;mv temporary test]0;hpzhong@localhost:~/HWOne]7;file://localhost.localdomain/home/hpzhong/HWOne[hpzhong@localhost HWOne]$ d[Kcd ..
+]777;notify;Command completed;cd ..]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ rm -r HWONE[K[KEN[K[Kne
+]777;notify;Command completed;rm -r HWOne]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ echo 'Eyes Only' > secretfile
+]777;notify;Command completed;echo 'Eyes Only' > secretfile]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ chmod -w secretfile
+]777;notify;Command completed;chmod -w secretfile]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ ls -l
+total 44
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 29 18:58 [0m[38;5;33mDesktop[0m
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:08 [38;5;33mDocuments[0m
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:14 [38;5;33mDownloads[0m
+-rw-rw-r-- 1 hpzhong hpzhong    0 Apr  6 19:50 hw1.part1
+-rw-r--r-- 1 hpzhong hpzhong 3692 Mar 22 12:19 linuxcheck.sh
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:08 [38;5;33mMusic[0m
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:08 [38;5;33mPictures[0m
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:08 [38;5;33mPublic[0m
+-r--r--r-- 1 hpzhong hpzhong   10 Apr  6 19:54 secretfile
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:08 [38;5;33mTemplates[0m
+-rw-rw-r-- 1 hpzhong hpzhong    4 Apr  5 11:10 tmpfile
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:08 [38;5;33mVideos[0m
+]777;notify;Command completed;ls -l]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ cat >> secretfile
+bash: secretfile: Permission denied
+]777;notify;Command completed;cat >> secretfile]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ ls[K[Kchmod -r secretfile
+]777;notify;Command completed;chmod -r secretfile]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ ls -l
+total 48
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 29 18:58 [0m[38;5;33mDesktop[0m
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:08 [38;5;33mDocuments[0m
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:14 [38;5;33mDownloads[0m
+-rw-rw-r-- 1 hpzhong hpzhong 4096 Apr  6 19:54 hw1.part1
+-rw-r--r-- 1 hpzhong hpzhong 3692 Mar 22 12:19 linuxcheck.sh
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:08 [38;5;33mMusic[0m
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:08 [38;5;33mPictures[0m
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:08 [38;5;33mPublic[0m
+---------- 1 hpzhong hpzhong   10 Apr  6 19:54 secretfile
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:08 [38;5;33mTemplates[0m
+-rw-rw-r-- 1 hpzhong hpzhong    4 Apr  5 11:10 tmpfile
+drwxr-xr-x 2 hpzhong hpzhong 4096 Mar 22 12:08 [38;5;33mVideos[0m
+]777;notify;Command completed;ls -l]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ cat secretfile
+cat: secretfile: Permission denied
+]777;notify;Command completed;cat secretfile]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ uname -r
+4.18.0-240.15.1.el8_3.x86_64
+]777;notify;Command completed;uname -r]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ ps -u hpzhong
+    PID TTY          TIME CMD
+   1416 ?        00:00:00 systemd
+   1420 ?        00:00:00 (sd-pam)
+   1434 ?        00:00:00 pulseaudio
+   1437 ?        00:00:00 gnome-keyring-d
+   1445 ?        00:00:00 dbus-daemon
+   1449 tty2     00:00:00 gdm-x-session
+   1471 tty2     00:00:00 gnome-session-b
+   1526 ?        00:00:00 at-spi-bus-laun
+   1531 ?        00:00:00 dbus-daemon
+   1534 ?        00:00:00 at-spi2-registr
+   1551 tty2     00:00:24 gnome-shell
+   1559 ?        00:00:00 gvfsd
+   1564 ?        00:00:00 gvfsd-fuse
+   1574 tty2     00:00:00 ibus-daemon
+   1578 tty2     00:00:00 ibus-dconf
+   1579 tty2     00:00:00 ibus-extension-
+   1581 tty2     00:00:00 ibus-x11
+   1584 ?        00:00:00 ibus-portal
+   1588 ?        00:00:00 xdg-permission-
+   1601 ?        00:00:00 gnome-shell-cal
+   1608 ?        00:00:00 evolution-sourc
+   1619 ?        00:00:00 gvfs-udisks2-vo
+   1627 ?        00:00:00 goa-daemon
+   1628 ?        00:00:00 gvfs-afc-volume
+   1633 ?        00:00:00 gvfs-gphoto2-vo
+   1642 tty2     00:00:00 gsd-account
+   1647 tty2     00:00:00 gsd-power
+   1648 tty2     00:00:00 gsd-print-notif
+   1649 tty2     00:00:00 gsd-rfkill
+   1650 tty2     00:00:00 gsd-screensaver
+   1651 tty2     00:00:00 gsd-sharing
+   1652 tty2     00:00:00 gsd-smartcard
+   1653 tty2     00:00:00 gsd-sound
+   1656 tty2     00:00:00 gsd-xsettings
+   1657 tty2     00:00:00 gsd-wacom
+   1668 tty2     00:00:00 gsd-a11y-settin
+   1670 tty2     00:00:00 gsd-clipboard
+   1671 tty2     00:00:00 gsd-color
+   1672 tty2     00:00:00 gsd-datetime
+   1673 tty2     00:00:00 gsd-housekeepin
+   1675 tty2     00:00:00 gsd-keyboard
+   1677 tty2     00:00:00 gsd-media-keys
+   1678 tty2     00:00:00 gsd-mouse
+   1716 tty2     00:00:00 gsd-printer
+   1737 tty2     00:00:00 tracker-miner-a
+   1746 tty2     00:00:00 tracker-miner-f
+   1751 tty2     00:00:01 vmtoolsd
+   1753 ?        00:00:00 tracker-store
+   1794 ?        00:00:00 goa-identity-se
+   1803 ?        00:00:00 evolution-calen
+   1808 tty2     00:00:00 ibus-engine-sim
+   1827 ?        00:00:00 evolution-calen
+   1844 ?        00:00:00 dconf-service
+   1848 ?        00:00:00 evolution-addre
+   1867 ?        00:00:00 evolution-addre
+   2527 ?        00:00:00 gvfsd-metadata
+   2919 ?        00:00:00 gnome-terminal-
+   2927 pts/0    00:00:00 bash
+   2974 pts/0    00:00:00 script
+   2976 pts/1    00:00:00 bash
+   3255 pts/1    00:00:00 ps
+]777;notify;Command completed;ps -u hpzhong]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ grep 'hpzhong' /etc/passwd
+[01;31m[Khpzhong[m[K:x:1500:1500:[01;31m[Khpzhong[m[K:/home/[01;31m[Khpzhong[m[K:/bin/bash
+]777;notify;Command completed;grep 'hpzhong' /etc/passwd]0;hpzhong@localhost:~]7;file://localhost.localdomain/home/hpzhong[hpzhong@localhost ~]$ exit
+exit
+
+Script done on 2021-04-06 19:55:38-07:00
