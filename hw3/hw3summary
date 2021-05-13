@@ -14,7 +14,9 @@ CSE 374 HW3
    getcourses: I have decided to include all urls that includes the pattern
    	       "courses/", since all of these urls are CSE course websites
 	       hosted on courses.cs.washington.edu. I also decided to delete
-	       the "csep" courses, since they are for the PMP program. I also     		       included an additional step to process the degenerate link of CSE 		       578, a special url that does not end with a forward slash.
+	       the "csep" courses, since they are for the PMP program. I also     		       
+	       included an additional step to process the degenerate link of CSE 		       
+	       578, a special url that does not end with a forward slash.
 
    perform-measurement: Instead of using the wc command to count the byte size
 			of the html file, I used sed to process the information
