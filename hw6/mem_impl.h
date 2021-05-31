@@ -5,6 +5,9 @@
 // mem_impl.h is the header file for the implementation details of the
 // memory manager
 
+#ifndef MEM_IMPL_H
+#define MEM_IMPL_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -38,3 +41,5 @@ void removeBlock(memblock* block);
 void split(memblock* block, uintptr_t blockSize);
 void insert(memblock* block);
 void printStat();
+
+#endif

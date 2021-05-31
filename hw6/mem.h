@@ -4,6 +4,9 @@
 
 // mem.h is the header file for the clients of the memory manager
 
+#ifndef MEM_H
+#define MEM_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -16,3 +19,4 @@ void get_mem_stats(
   uintptr_t* n_free_blocks);
 void print_heap(FILE * f);
 
+#endif
