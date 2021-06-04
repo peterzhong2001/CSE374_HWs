@@ -12,15 +12,15 @@ int findGCD(int a, int b);
 namespace Fraction374 {
 
   // constructors
-  Fraction::Fraction() { // default to 0/1
+  Fraction::Fraction() {  // default to 0/1
     numer_ = 0;
     denom_ = 1;
   }
-  Fraction::Fraction(int n) { // create n/1
+  Fraction::Fraction(int n) {  // create n/1
     numer_ = n;
     denom_ = 1;
   }
-  Fraction::Fraction(int n, int d) { // create n/d
+  Fraction::Fraction(int n, int d) {  // create n/d
     // denominator should always be positive
     if (d < 0) {
       n = 0 - n;
@@ -32,10 +32,10 @@ namespace Fraction374 {
   }
 
   // accessors
-  int Fraction::n() const { // return numerator
+  int Fraction::n() const {  // return numerator
     return numer_;
   }
-  int Fraction::d() const { // return denominator
+  int Fraction::d() const {  // return denominator
     return denom_;
   }
 
@@ -61,13 +61,12 @@ namespace Fraction374 {
     Fraction result(newNumer, newDenom);
     return result;
   }
-  
+
   // dividing this with other and returning the result as a new fraction
   Fraction Fraction::div(Fraction other) const {
     Fraction inv(other.d(), other.n());
     return Fraction::times(inv);
   }
-
 }
 
 // helper function to find and return the greatest common divisor
@@ -88,7 +87,7 @@ int findGCD(int a, int b) {
   if (b < 0) {
     b = 0 - b;
   }
-  // perform the GCD search on two non-zero integers  
+  // perform the GCD search on two non-zero integers
   int result;
   for (int i = 1; i <= a && i <= b; i++) {
     if (a % i == 0 && b % i == 0) {
